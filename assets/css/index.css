@@ -187,8 +187,56 @@ html, body{
 
 }
 
+.videozin {
+    position: relative;
+    height: 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.videozin > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+
+
+}
+
 .fim-pagina {
     font-family: 'Caveat', cursive;
     font-size: 36px;
     color: #000000;
 }
+
+.gif-fim {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.gif-fim > img {
+    width: 100%;
+    object-fit: contain;
+}
+
+
+@media (max-width: 600px)
+{
+    .imagem-textin > img:hover { 
+        transform: scale(1);
+    }
+    
+    
+    .imagem-textin > img:focus { 
+        transform: scale(1);
+    }
+}
+
